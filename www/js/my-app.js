@@ -45,7 +45,7 @@ $$(document).on('deviceready', function() {
       
       //se nao estiver logado abre tela de login
       if(idUsuario == null){
-      //myApp.loginScreen('.login-screen');
+      myApp.loginScreen('.login-screen');
     }
     
     //oculta barra
