@@ -16,6 +16,8 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+    //oculta barra
+      myApp.hideToolbar('.toolbar',false);
 
 
 
@@ -42,15 +44,11 @@ var idUsuario;
 //executa quando o aparelho estiver pronto
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
-      
       //se nao estiver logado abre tela de login
       if(idUsuario == null){
       myApp.loginScreen('.login-screen');
     }
     
-    //oculta barra
-      mainView.hideToolbar();
-
 //oculta load
 myApp.showIndicator();
 
@@ -273,7 +271,7 @@ function insertFoto(imageData){
 
 //oculta a barra ao clickar no botao voltar
 $$(document).on('click','.back',function(){
-     mainView.hideToolbar();
+   myApp.hideToolbar('.toolbar');
 });
 
 
@@ -441,6 +439,7 @@ $$.ajax({
         myApp.closePanel();
         mainView.showToolbar();
         deletaFoto();
+        $$('.toolbar').css({'display':'block'});
 
     }
 

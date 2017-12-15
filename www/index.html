@@ -61,6 +61,8 @@ padding-right: 10px;
 }
 
 
+
+
 </style>
 
 </head>
@@ -74,11 +76,45 @@ padding-right: 10px;
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal ">
         <div class="content-block">
+<div class="list-block">
+    <ul>
+        <li>
+            <a href="index.html" class="item-link item-content">
+            <div class="item-media"><i class="fa fa-home fa-3x"></i>
+            </div>
+            <div class="item-inner">Inicio</div>  
+            </a>
+        </li>
+              <li>
+            <a href="add.html" class="item-link item-content">
+            <div class="item-media"><i class="fa fa-plus fa-3x"></i>
+            </div>
+            <div class="item-inner">Nova Visita</div>  
+            </a>
+        </li>
+              <li>
+            <a href="lista.html" class="item-link item-content">
+            <div class="item-media"><i class="fa fa-eye fa-3x"></i>
+            </div>
+            <div class="item-inner">Lista de visitas</div>  
+            </a>
+        </li>
+              <li>
+            <a href="#" class="item-link item-content sincronizar">
+            <div class="item-media"><i class="fa fa-refresh fa-3x"></i>
+            </div>
+            <div class="item-inner">Sincronizar</div>  
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--
             <p class="menu"><a href="index.html" class="link"><i class="fa fa-home fa-3x menu"></i>  INICIO</a></p>
             <p class="menu"><a href="add.html" class="link"><i class="fa fa-plus fa-3x menu"></i>NOVA VISITA</a></p>
             <p class="menu"><a href="lista.html" class="link banco"><i class="fa fa-eye menu fa-3x"></i>  LISTA DE VISITAS</a></p>
              <p class="menu"><a href="#" class="link sincronizar"><i class="fa fa-refresh menu fa-3x"></i>  Sincronizar</a></p>
-            
+            -->
         </div>
     </div>
 
@@ -115,14 +151,14 @@ padding-right: 10px;
           
       </ul>
       </div>
-<div class="loader"></div>
+<div class="loader" id="loader"></div>
 
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Bottom Toolbar-->
-            <div class="toolbar" style="padding: 30px;">
+            <div class="toolbar" style="padding: 30px; display: none;">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
                     <a href="#" class="link button button-big button-fill color-gray">Cancelar</a>
